@@ -32,7 +32,19 @@
 
     <!-- Template Stylesheet -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    
     <style>
+/* Reset some default styles */
+
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .col-lg-7, .col-lg-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
         @keyframes lightWave {
     0%, 100% {
         transform: translateY(0);
@@ -163,6 +175,20 @@
 * {
   box-sizing: border-box;
 }
+
+.container-xxl.py-5 {
+    /* background-image: url('https://saal.ai/wp-content/themes/saal/assets/images/color02.png'); */
+    background-size: 50% auto; /* This will make the image take up 50% of the container's width */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: right center; /* Position the image to the right center */
+    background-attachment: fixed; /* Optional: This will create a parallax effect. If you don't want that, remove this line */
+}
+
+.saal_carousel__item--aicconta {
+    display: flex!important;
+    gap: 40px;
+}
+
     </style>
 </head>
 
@@ -259,7 +285,7 @@
                                 <div class="col-lg-5">
                                     <!-- <img src="https://saal.ai/wp-content/themes/saal/assets/images/color02.png" alt="saal ai" data-lazy-src=""> -->
 
-                                    <img src="https://saal.ai/wp-content/themes/saal/assets/images/color02.png" alt="Image Description" class="img-fluid animated slideInRight"> 
+                                    <!-- <img src="https://saal.ai/wp-content/themes/saal/assets/images/color02.png" alt="Image Description" class="img-fluid animated slideInRight">  -->
                                 </div>
     
                             </div>
@@ -284,7 +310,7 @@
 
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">About Us</p>
+                    <p fclass="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">About Us</p>
                     <h1 class="display-5 mb-4">Grow Ai Applied</h1>
                     <p class="mb-4">Grow AI is a pioneering company specializing in the realm of artificial intelligence, dedicated to cultivating innovative solutions that propel industries into the future.
                     </p>
@@ -407,9 +433,133 @@
         </div>
     </div> -->
     <!-- Facts End -->
+    <div class="container-xxl feature py-5">
+    <div class="container1">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="text-wrapper mb-50 wow fadeInRight">
+                    <div class="section-title mb-15">
+                        <span class="sub-title st-one color-secondary">Our Services</span>
+                        <h2>AI Capabilities</h2>
+                    </div>
+                    <div class="saal-divider__three"></div>
+                    <div class="text-wrapper mb-50 wow fadeInRight">
+                        <p>We mobilize cross-functional collaborative teams of AI engineers, implementation
+                            specialists, data scientists and machine learning experts to develop flexible AI
+                            solutions that can transform industries.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="saal_carousel__aic">
+                    <div class="saal_carousel__item--aic">
+                        <div class="saal_carousel__item--aicconta">
+                            <div class="saal_carousel__item--left">
+                              
+                            </div>
+                            <div class="saal_carousel__item--right">
+                                <h3>Big Data Analytics</h3>
+                                <p>Examine data sets to identify patterns, trends and correlations with our AI-based
+                                    big data analytics to derive insights that support improved decision-making.</p>
+                            </div>
+                        </div>
+                        <div class="saal_carousel__item--aicconta">
+                            <div class="saal_carousel__item--left">
+                            
+                            </div>
+                            <div class="saal_carousel__item--right">
+                                <h3>Machine Learning</h3>
+                                <p>Analyze historical data inputs with machine learning to predict more accurate
+                                    outcomes.</p>
+                            </div>
+                        </div>
+                        <div class="saal_carousel__item--aicconta">
+                            <div class="saal_carousel__item--left">
+                          
+                            </div>
+                            <div class="saal_carousel__item--right">
+                                <h3>Natural Language Processing</h3>
+                                <p>Process massive volumes and heterogeneous sources of content (text and speech) in
+                                    multiple languages to create deep semantic models for various applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="saal_carousel__item--aic">
+                        <div class="saal_carousel__item--aicconta">
+                            <div class="saal_carousel__item--left">
+                          
+                            </div>
+                            <div class="saal_carousel__item--right">
+                                <h3>Arabic AI</h3>
+                                <p>Provide a range of Arabic language APIs to create personalized digital
+                                    experiences for Arabic speakers.</p>
+                            </div>
+                        </div>
+                        <div class="saal_carousel__item--aicconta">
+                            <div class="saal_carousel__item--left">
+                            
+                            </div>
+                            <div class="saal_carousel__item--right">
+                                <h3>DevOps</h3>
+                                <p>Apply our groundbreaking in-house DevOps practices to promote stable, reliable
+                                    and cost-effective collaboration.</p>
+                            </div>
+                        </div>
+                        <div class="saal_carousel__item--aicconta">
+                            <div class="saal_carousel__item--left">
+                            
+                            </div>
+                            <div class="saal_carousel__item--right">
+                                <h3>Speech Processing</h3>
+                                <p>Text to speech – Transcode written text into voice allowing you to consume
+                                    important information on the go. Speech processing in AI-Convert audio and video
+                                    into accurate text.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="saal_carousel__item--aic">
+                        <div class="saal_carousel__item--aicconta">
+                            <div class="saal_carousel__item--left">
+                               
+                            </div>
+                            <div class="saal_carousel__item--right">
+                                <h3>Application &Integration</h3>
+                                <p>Facilitate smooth data transfer among different kinds of systems and workflows to
+                                    support productivity and automation.</p>
+                            </div>
+                        </div>
+                        <div class="saal_carousel__item--aicconta">
+                            <div class="saal_carousel__item--left">
+                             
+                            </div>
+                            <div class="saal_carousel__item--right">
+                                <h3>UX / Design Thinking</h3>
+                                <p>Apply a user-centric approach to design and create tailored experiences to meet
+                                    specific user needs.</p>
+                            </div>
+                        </div>
+                        <div class="saal_carousel__item--aicconta">
+                            <div class="saal_carousel__item--left">
+                           
+                            </div>
+                            <div class="saal_carousel__item--right">
+                                <h3>Engineering Cloud Native</h3>
+                                <p>Operate on cloud-native architecture to apply the best practices for development
+                                    and deployment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
+    
 
+    
     <!-- Features Start -->
+
     <div class="container-xxl feature py-5">
 
         <div class="container">
@@ -463,121 +613,6 @@
         </div>
     </div>
     <!-- Features End -->
-
-
-    <!-- Service Start -->
-    <!-- <div class="container-xxl service py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">We transform lives</p>
-                <h1 class="display-5 mb-5">Our Expertise Industries</h1>
-            </div>
-            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-lg-4">
-                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Educational Institution</h5>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Retail Shops</h5>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Large Scale Industries</h5>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Companies</h5>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="tab-content w-100">
-                        <div class="tab-pane fade show active" id="tab-pane-1">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="{% static 'img/service-1.png' %}"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-4">2 Years Of Experience In Educational Institution </h3>
-                                    <p class="mb-4">Unlock the full potential of educational institutions with our indispensable AI-powered products, thoughtfully designed by Grow AI to enrich learning environments.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Bus Locater</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Automatic Attendance Using CCTV</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Focus Detection</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Teacher Stats</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-2">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="{% static 'img/12.png' %}"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-4">2 Years Of Experience In Retail Industries</h3>
-                                    <p class="mb-4">Elevate retail experiences with our tailored AI products, thoughtfully curated by Grow AI to optimize operations, engage customers, and drive business growth for retail shops.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Vip Customer</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Iot Automation</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Sales Analyser</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-3">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="{% static 'img/service-3.jpg' %}"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                        clita duo justo erat amet.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-4">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="{% static 'img/service-4.jpg' %}"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                        clita duo justo erat amet.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Service End -->
 
 
     <!-- Callback Start -->
@@ -636,115 +671,35 @@
 
 
     <!-- Projects Start -->
-    <!-- <div class="container-xxl py-5">
+    <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Projects</p>
                 <h1 class="display-5 mb-5">We Have Completed Latest Projects</h1>
             </div>
+            
             <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.3s">
+                {% for i in projects %}
                 <div class="project-item pe-5 pb-5">
                     <div class="project-img mb-3">
-                        <img class="img-fluid rounded" src="{% static 'img/service-1.jpg' %}" alt="">
+                        <img class="img-fluid rounded" src="{{i.image.url}}" alt="">
                         <a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
                     </div>
                     <div class="project-title">
-                        <h4 class="mb-0">Financial Planning</h4>
+                        <h4 class="mb-0">{{i.name}}</h4>
                     </div>
-                </div>
-                <div class="project-item pe-5 pb-5">
-                    <div class="project-img mb-3">
-                        <img class="img-fluid rounded" src="{% static 'img/service-2.jpg' %}" alt="">
-                        <a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
-                    </div>
-                    <div class="project-title">
-                        <h4 class="mb-0">Cash Investment</h4>
-                    </div>
-                </div>
-                <div class="project-item pe-5 pb-5">
-                    <div class="project-img mb-3">
-                        <img class="img-fluid rounded" src="{% static 'img/service-3.jpg' %}" alt="">
-                        <a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
-                    </div>
-                    <div class="project-title">
-                        <h4 class="mb-0">Financial Consultancy</h4>
-                    </div>
-                </div>
-                <div class="project-item pe-5 pb-5">
-                    <div class="project-img mb-3">
-                        <img class="img-fluid rounded" src="{% static 'img/service-4.jpg' %}" alt="">
-                        <a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
-                    </div>
-                    <div class="project-title">
-                        <h4 class="mb-0">Business Loans</h4>
-                    </div>
-                </div>
+             
             </div>
+            {% endfor %}
         </div>
-    </div> -->
+       
+    </div>
     <!-- Projects End -->
 
 
     
 
 
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Team</p>
-                <h1 class="display-5 mb-5">Exclusive Team</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <img class="img-fluid rounded" src="{% static 'img/team-1.jpg' %}" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Kate Winslet</h4>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <img class="img-fluid rounded" src="{% static 'img/team-2.jpg' %}" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Jac Jacson</h4>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <img class="img-fluid rounded" src="{% static 'img/team-3.jpg' %}" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Doris Jordan</h4>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
 
 
     <!-- Testimonial Start -->
@@ -808,6 +763,52 @@
     </div>
     <!-- Testimonial End -->
 
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Team</p>
+                <h1 class="display-5 mb-5">Exclusive Team</h1>
+            </div>
+            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.3s">
+                {% for i in Team %}
+                <div class="project-item pe-5 pb-5">
+                    <div class="team-item">
+                        <img class="img-fluid rounded" src="{{i.image.url}}" alt="">
+                        <a href=""></a>
+                    </div>
+                    <div class="project-title">
+                        <h3 class="mb-0"><b>{{i.name}}</b><br><span class="text-green">{{i.position}}</span></h3>
+                    </div>
+                    
+             
+            </div>
+            {% endfor %}
+        </div>
+        </div>
+    </div>
+    <!-- <div class="row g-4">
+        {% for i in Team %}
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+           
+            <div class="team-item">
+                
+                <img class="img-fluid rounded" src="{{i.image.url}}" alt="">
+                <div class="team-text">
+                  
+                    <h3 class="mb-0">{{i.name}}</h3>
+
+                    <div class="team-social d-flex">
+                        <h4 class="mb-0">{{i.position}}</h4>
+
+
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        {% endfor %} -->
+    <!-- Team End -->
 
     <!-- Footer Start -->
     <!-- <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
@@ -884,7 +885,9 @@
 
 
     <!-- JavaScript Libraries -->
-
+        <!-- Your other meta tags and stylesheets -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{% static 'lib/wow/wow.min.js' %}"></script>

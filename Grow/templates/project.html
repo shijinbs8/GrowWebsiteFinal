@@ -32,6 +32,20 @@
 
     <!-- Template Stylesheet -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <style>
+        .page-header {
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    background-image: url('https://saal.ai/wp-content/themes/saal/assets/images/line8.svg') top left no-repeat;
+    background-size: cover;
+
+}
+
+.title-image {
+            height: 2.5rem; /* Adjust to fit the text size */
+            margin-right: 15px; /* Spacing between image and text */
+        }
+    </style>
 </head>
 
 <body>
@@ -58,7 +72,8 @@
 
         <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="display-5 text-primary m-0">Grow</h1>
+                <img src="{% static 'img/Grow Logo.png' %}" alt="Grow Ai Logo" class="title-image">
+
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">

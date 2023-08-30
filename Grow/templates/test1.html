@@ -3,32 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spline Animation</title>
-    <style>
-        body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-}
-
-svg {
-    overflow: visible;
-}
-
-    </style>
+    <title>Team Carousel</title>
+    <!-- Include Owl Carousel CSS and JS -->
+    <link rel="stylesheet" href="path/to/owl.carousel.min.css">
+    <link rel="stylesheet" href="path/to/owl.theme.default.min.css">
+    <script src="path/to/jquery.min.js"></script>
+    <script src="path/to/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".team-carousel").owlCarousel({
+                autoplay: true,
+                smartSpeed: 1000,
+                margin: 25,
+                loop: true,
+                center: true,
+                dots: false,
+                nav: true,
+                navText: [
+                    '<i class="bi bi-chevron-left"></i>',
+                    '<i class="bi bi-chevron-right"></i>'
+                ],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
 </head>
 <body>
-    <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
-        <!-- Defining the cubic bezier path -->
-        <path id="splinePath" d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80" fill="transparent" stroke="black"/>
-        <!-- Circle that will move along the path -->
-        <circle r="5" fill="red">
-            <animateMotion repeatCount="indefinite" dur="6s">
-                <mpath href="#splinePath"/>
-            </animateMotion>
-        </circle>
-    </svg>
+    <div class="row g-4 team-carousel">
+        {% for i in Team %}
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item">
+                <img class="img-fluid rounded" src="{{ i.image.url }}" alt="">
+                <div class="team-text">
+                    <h3 class="mb-0">{{ i.name }}</h3>
+                    <div class="team-social d-flex">
+                        <h4 class="mb-0">{{ i.position }}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </body>
 </html>

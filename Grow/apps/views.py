@@ -1,13 +1,14 @@
 from django.shortcuts import render
-from apps.models import TeamMembersModel
+from apps.models import TeamMembersModel,Projects
 
 # Create your views here.
-def index(request):
-    return render(request,'index.html')
+# def index(request):
+#     return render(request,'index.html')
 
 def projects(request):
     return render(request,'project.html')
 
 def index(request):
-    qs=TeamMembersModel.objects.all()
-    return render(request,'index.html',{"qs":qs})
+    Team=TeamMembersModel.objects.all()
+    projects=Projects.objects.all()
+    return render(request,'index.html',{"Team":Team,'projects':projects})
