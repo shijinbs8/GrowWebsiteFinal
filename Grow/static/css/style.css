@@ -1,8 +1,8 @@
 /********** Template CSS **********/
 :root {
-    --primary: green;
+    --primary: white;
     --secondary: #E93C05;
-    --tertiary: #555555;
+    --tertiary: white;
     --light: #DFE4FD;
     --dark: #011A41;
 }
@@ -16,7 +16,7 @@
 }
 
 h1,
-.h1,
+.h1,b
 h2,
 .h2,
 .fw-bold {
@@ -113,14 +113,14 @@ h6,
 
 .navbar .navbar-nav .nav-link {
     padding: 25px 15px;
-    color: var(--tertiary);
+    color: rgb(0, 0, 0);
     font-weight: 500;
     outline: none;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: var(--dark);
 }
 
 @media (max-width: 991.98px) {
@@ -222,7 +222,7 @@ h6,
 
 /*** Facts ***/
 .facts {
-    background: linear-gradient(rgba(60, 252, 53, 0.95), rgba(16, 197, 55, 0.95)), url(../img/bg.png);
+    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
 }
 
 
@@ -539,3 +539,4 @@ h6,
 .copyright a:hover {
     color: var(--primary);
 }
+
