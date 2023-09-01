@@ -221,7 +221,7 @@ h6,
 
 /*** Facts ***/
 .facts {
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
+    background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
 }
 
 
@@ -237,7 +237,7 @@ h6,
     height: 50%;
     top: 0;
     left: 0;
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
+    background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
     z-index: -1;
 }
 
