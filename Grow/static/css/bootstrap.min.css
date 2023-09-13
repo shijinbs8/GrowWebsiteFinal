@@ -54,7 +54,9 @@
     font-weight: 400;
     line-height: 1.5;
     color: rgb(255, 255, 255);
-    background-image: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+    background-image: linear-gradient(to right, #D3D3D3, #FF9F43);
+    
+
    
   }
   hr {
@@ -87,9 +89,11 @@
     color: rgb(0, 0, 0);
     
   }
-  .h1{
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  h1,
+  .h1 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   }
+
   /* h1,
   .h1 {
     font-size: calc(1.375rem + 1.5vw);
@@ -6852,7 +6856,7 @@
     background-color: #dfe4fd !important;
   }
   .bg-dark {
-    background-color: #011a41 !important;
+    background: linear-gradient(to right, #057083, #444745);
   }
   .bg-body {
     background-color: !important;

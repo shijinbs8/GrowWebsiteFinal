@@ -237,7 +237,7 @@ h6,
     height: 50%;
     top: 0;
     left: 0;
-    background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+    background: linear-gradient(to right, #057083, #444745);
     z-index: -1;
 }
 
@@ -254,7 +254,7 @@ h6,
 }
 
 .feature .feature-box:hover * {
-    color: #FFFFFF !important;
+    color: #000000 !important;
 }
 
 

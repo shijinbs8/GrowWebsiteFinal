@@ -9,5 +9,5 @@ urlpatterns=[
     path('about/',about,name='about'),
     path('contact/',contact,name='contact'),
     path('r/', request_callback, name='callback'),
-
+    path('csv/', download_csv, name='download_csv'),
 ]
